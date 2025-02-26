@@ -14,6 +14,9 @@ Route::get('/Dashboard-Panel', [AdminController::class, 'dashboard'])->name('Das
 Route::get('/Product', [ProductController::class, 'index'])->name('Product');
 Route::get('/Product-Add', [ProductController::class, 'create'])->name('add-Product');
 Route::post('/Product-Add', [ProductController::class, 'store'])->name('Product.store');
+Route::get("/Product/{id_product}", [ProductController::class, 'edit'])->name("Product.edit");
+Route::post("/Product/{id_product}", [ProductController::class, 'update'])->name("Product.update");
+Route::delete("/Product/{id_product}/delete", [ProductController::class, 'destroy'])->name("Product.delete");
 
 
 // Route::get('/dashboard', function () {
