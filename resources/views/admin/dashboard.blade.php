@@ -60,6 +60,11 @@
 
                 </div>
             </div>
+            {{-- chart --}}
+            <div>
+
+            </div>
+            {{-- END chart --}}
         </div>
     </div>
 @endsection
